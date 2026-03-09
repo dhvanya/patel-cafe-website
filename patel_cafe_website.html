@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patel Cafe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#1e3a8a,#06b6d4);
+color:white;
+padding:60px;
+text-align:center;
+}
+
+header h1{
+font-size:45px;
+margin:0;
+}
+
+nav{
+background:#111827;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:18px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#06b6d4;
+}
+
+.hero{
+background:linear-gradient(to right,#2563eb,#06b6d4);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.hero button{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+border-radius:8px;
+background:white;
+color:#2563eb;
+font-weight:bold;
+cursor:pointer;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+margin:20px;
+padding:20px;
+width:260px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+max-width:900px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+}
+
+.testimonials{
+max-width:800px;
+margin:auto;
+}
+
+.review{
+background:white;
+padding:25px;
+margin:20px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.about{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+}
+
+.contact p{
+font-size:18px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:700px){
+
+.hero h2{
+font-size:28px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Patel Cafe</h1>
+<p>Fresh Food • Great Coffee • Good Vibes</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<h2>Welcome to Patel Cafe</h2>
+<p>Enjoy delicious snacks and premium coffee in Jamnagar.</p>
+<button onclick="document.getElementById('menu').scrollIntoView()">Explore Menu</button>
+</section>
+
+<section id="menu" class="section">
+
+<h2>Popular Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Veg Burger</h3>
+<p>₹120</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af">
+<h3>Cheese Sandwich</h3>
+<p>₹100</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+<h3>Cold Coffee</h3>
+<p>₹80</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+<h3>Pizza</h3>
+<p>₹200</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="section">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f">
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
+
+</div>
+
+</section>
+
+<section id="reviews" class="section">
+
+<h2>Customer Reviews</h2>
+
+<div class="testimonials">
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+Amazing food and great atmosphere.
+</div>
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+Best coffee place in Jamnagar!
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>About Us</h2>
+
+<div class="about">
+
+<p>
+Patel Cafe is a cozy local cafe known for fresh ingredients,
+great taste, and friendly service.
+</p>
+
+<p>
+We believe food tastes better when shared with friends and family.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Jamnagar, Gujarat</p>
+<p>📞 +91 99999 99999</p>
+<p>📧 patelcafe@email.com</p>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919999999999">Order on WhatsApp</a>
+
+<footer>
+<p>© 2026 Patel Cafe</p>
+</footer>
+
+</body>
+</html>
